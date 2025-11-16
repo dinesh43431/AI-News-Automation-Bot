@@ -1,0 +1,37 @@
+📰 AI News Summarizer & Telegram Notifier
+
+A fully automated system that fetches trending news, summarizes it using AI, and sends it directly to Telegram every 6 hours.
+
+This project uses Flowise, JavaScript, and Telegram Bot API to create a smart automated news delivery system. It fetches the latest articles, extracts relevant details, summarizes them using an LLM, optionally selects a representative image, and sends everything neatly to a Telegram chat or channel.
+
+It works 24/7 without manual intervention.
+
+🚀 Features
+
+Automatic News Fetching — pulls latest news from websites or APIs.
+
+Smart Article Extraction — cleans up titles, descriptions, images, and URLs.
+
+AI Summarization — uses LLM (Groq/OpenAI/etc.) in Flowise to generate short, clear summaries.
+
+Telegram Notifications — sends summaries to a Telegram chat using sendMessage or sendPhoto.
+
+Image Selection (optional) — custom logic to pick an article image or fallback placeholder.
+
+Scheduled Automation — triggers every 6 hours using cron + Flowise webhook.
+
+Error Handling — skips broken articles and handles missing images smoothly.
+
+Fully No-Code / Low-Code — almost everything is built visually in Flowise.
+
+🧩 Tech Stack
+
+Flowise AI (visual AI agent builder)
+
+JavaScript / Node.js
+
+Telegram Bot API
+
+Cron (Debian) — for scheduling
+
+Optional: Custom JS Functions inside Flowise
